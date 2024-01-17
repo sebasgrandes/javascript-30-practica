@@ -1,0 +1,5 @@
+La vinculación entre el <label> y el <input> tiene varios beneficios:
+
+Mejora la accesibilidad: Cuando un usuario hace clic en el texto del <label>, se activará el <input> asociado, lo que facilita la interacción para personas con discapacidades visuales o motoras.
+
+Mayor área de clic: Al vincular el <label> al <input>, el área de clic efectiva se expande para incluir tanto el <input> como el texto del <label>. Esto hace que sea más fácil hacer clic en la casilla de verificación incluso si el usuario hace clic en el texto del <label>.

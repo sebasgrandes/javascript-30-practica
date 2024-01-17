@@ -1,0 +1,20 @@
+Entiendo que has utilizado un event listener para el evento "mousemove" y quieres imprimir en pantalla la variable `e` para explorar las diferencias entre las propiedades relacionadas con la posición del mouse. Aquí tienes una explicación de cada una de las propiedades mencionadas:
+
+1. `e.clientX`: Esta propiedad devuelve las coordenadas horizontales (en píxeles) del cursor del mouse con respecto al borde izquierdo del área del contenido visible del navegador (el área de visualización de la página web). Es relativo al viewport.
+
+2. `e.movementX`: Esta propiedad devuelve la diferencia entre la posición horizontal actual del cursor del mouse y su posición horizontal anterior en píxeles desde el último evento "mousemove". Indica cuántos píxeles se ha movido el mouse horizontalmente desde el último evento.
+
+3. `e.offsetX`: Esta propiedad generalmente se usa en eventos relacionados con elementos, como eventos en un elemento HTML. Devuelve las coordenadas horizontales (en píxeles) del cursor del mouse con respecto al borde izquierdo del elemento en el que se generó el evento.
+
+4. `e.pageX`: Esta propiedad devuelve las coordenadas horizontales (en píxeles) del cursor del mouse con respecto al borde izquierdo del documento entero. Es decir, es relativo a todo el documento web, no solo al viewport.
+
+5. `e.screenX`: Esta propiedad devuelve las coordenadas horizontales (en píxeles) del cursor del mouse con respecto al borde izquierdo de la pantalla del dispositivo. Es una medida en relación con la pantalla física o el monitor.
+
+6. `e.x`: Esta propiedad es similar a `e.clientX` y devuelve las coordenadas horizontales (en píxeles) del cursor del mouse con respecto al borde izquierdo del área de contenido visible del navegador (viewport).
+
+En resumen:
+
+-   `clientX`, `x` y `pageX` se refieren a la posición horizontal del cursor en relación con diferentes elementos (viewport, área de contenido visible y documento completo).
+-   `movementX` es la diferencia entre las posiciones horizontales actuales y anteriores del mouse desde el último evento "mousemove".
+-   `offsetX` se utiliza en eventos relacionados con elementos y devuelve la posición horizontal del cursor en relación con el elemento en el que se generó el evento.
+-   `screenX` se refiere a la posición horizontal en relación con la pantalla del dispositivo.

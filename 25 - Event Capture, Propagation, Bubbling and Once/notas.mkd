@@ -1,0 +1,26 @@
+# que es el propagation y bubbling en javascript
+
+En JavaScript, "propagation" y "bubbling" se refieren a dos fases importantes en el flujo de eventos en el DOM (Modelo de Objeto de Documento) cuando ocurre un evento en un elemento HTML. Estos conceptos son esenciales para comprender cómo se manejan los eventos en JavaScript.
+
+1. Propagación de eventos ("Event propagation"):
+   La propagación de eventos se refiere a la forma en que un evento se propaga o se extiende a través de los elementos del DOM en una jerarquía, desde el elemento objetivo (donde se originó el evento) hasta el elemento raíz del documento (generalmente `<html>`).
+
+Hay dos tipos de propagación de eventos en JavaScript:
+
+-   Captura ("Capture"): En esta fase, el evento desciende desde el elemento raíz hacia el elemento objetivo. Esto significa que los eventos se capturan en los elementos padre antes de llegar al elemento objetivo.
+
+-   Bubbling ("Burbujeo"): En esta fase, el evento asciende desde el elemento objetivo hacia el elemento raíz. Esto significa que los eventos se propagan desde el elemento objetivo hacia los elementos padre.
+
+La propagación de eventos permite que los eventos se manejen en múltiples elementos en el camino desde el elemento objetivo hasta el elemento raíz. Puedes detener la propagación de eventos en cualquier fase utilizando métodos como `stopPropagation()`.
+
+2. Bubbling ("Burbujeo"):
+   El bubbling es una fase específica de la propagación de eventos en la que un evento se propaga desde el elemento objetivo hacia arriba a través de los elementos padre en la jerarquía del DOM. Esto significa que, después de que se haya manejado el evento en el elemento objetivo, el evento se propaga a través de los elementos padre en orden ascendente.
+
+Por ejemplo, si tienes una estructura HTML anidada con varios elementos, como divs dentro de divs, y haces clic en uno de los elementos internos, el evento de clic se propagará primero desde el elemento más interno hacia el más externo a través del bubbling.
+
+Puedes usar el método `addEventListener()` para registrar manejadores de eventos en elementos HTML y decidir si deseas capturar el evento durante la fase de captura, la fase de burbujeo o en ambas fases.
+
+En resumen, la propagación y el bubbling son conceptos clave para entender cómo los eventos se manejan en JavaScript a medida que se propagan a través de la jerarquía del DOM, ya sea desde el elemento raíz hacia el objetivo (fase de captura) o desde el objetivo hacia el raíz (fase de burbujeo).
+
+# y que es once en add event listener
+
